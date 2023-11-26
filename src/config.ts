@@ -19,10 +19,14 @@
 
 
 
-export const PORT = process.env.PORT || 6000;
+export const PORT = Number(process.env.PORT || 6000);
+export const IP_REQUEST_LIMIT = Number(process.env.IP_REQUEST_LIMIT || 50);
+export const IP_RATE_LIMITER_TIME_WINDOW_IN_MS = Number(process.env.IP_RATE_LIMITER_TIME_WINDOW_IN_MS || 15*60*1000);
+
 export const CASSANDRA_IPs = process.env.CASSANDRA_IPs ? process.env.CASSANDRA_IPs.split(',') : ["0.0.0.0"];
 export const CASSANDRA_KEYSPACE = process.env.CASSANDRA_KEYSPACE || "talkshop";
 export const TABLE_NAME = process.env.TABLE_NAME || "POSTS";
+
 
 
 
