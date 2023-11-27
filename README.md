@@ -12,6 +12,7 @@ Objective: Design and implement a microservice for a hypothetical social media a
 1. Run Cassandra in your machine on 9042 port.
 2. Create Keyspace named "talkshop".
 3. cd  "/path/to/project/directory"
+4. Run npm install
 4. Run "npx tsc" command.
 5. Run "node build/index.js"
 6. Use shared postman collection : https://github.com/barnwal-paras/social-media-microservice/blob/main/SocialMediaMicroservice.postman_collection.json
